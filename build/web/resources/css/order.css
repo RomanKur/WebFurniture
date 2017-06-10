@@ -1,0 +1,124 @@
+.container-fluid{
+    text-align: center;
+    
+}
+
+#calendar{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+.container-fluid h1{
+    margin: 20px auto;
+    text-align: center;
+}
+#date-box{
+    width:400px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    /*border: 1px solid #97B7D8;*/
+}
+.date-line{
+    display: inline-block;
+}
+#select-week{
+    width: 40px;  
+}
+#select-month{
+    width: 80px;  
+}
+#select-year{
+    width: 80px;  
+}
+/* boxes - внешний слой, после слоя с датой. 
+  Внутри позиционирование нетривиальное.
+  Обертка wrap и слой boxes-left - левая колонка.
+  Правая колонка, boxes-right, никак не учавствует в своем позиционировании, 
+  только для содержимого*/
+#boxes{
+    /*width: 25%;*/
+    /*position: relative;*/
+    /*left: 25%;*/
+}
+
+#wrap{
+    width:100%;
+    margin-right:-100%; /*  чтобы IE6 не раздвигал контейнер */
+    position:relative;
+    left: 100%;
+}
+#boxes-left{
+    float:left;
+    width:100%;
+    margin-right:-100%;
+    position:relative;
+    left:-100%;
+    text-align: right;
+    
+}
+#boxes-right{
+    padding: 20px 0 0 20px;
+    text-align: left;
+}
+/* Класс .clear относится к выравниванию блока boxes*/
+.clear{
+    clear:both;
+    font-size:0;
+    overflow:hidden;
+}
+
+#order-name-box{
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+    padding: 5px;
+}
+#order-name{
+    width: 350px;
+
+}
+#block-labels{
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+    margin-top: 20px; 
+
+}
+.block-models{
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+    padding: 5px; 
+
+}
+#label-line{
+    margin-left: 5px;
+}
+#label-count{
+    margin-left: 190px;
+}
+.select-model{
+    display: inline-block;
+    width: 250px;
+}
+.input-count{
+    display: inline-block;
+    width: 80px;
+}
+.model-select-line{
+    display: inline-block;
+}
+.model-count-line{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+#button-box{
+    display: block;
+    width: 100%;
+    margin: 50px 0px;
+    padding: 0px;
+    text-align: center;
+}
